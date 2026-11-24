@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frugal Testing | Market Monitor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Market Monitor</h1>
+      <p>Real-time financial intelligence</p>
+    </div>
+    <span id="connection-status">CONNECTING</span>
+  </header>
+
+  <main>
+    <section class="market-card">
+      <div class="market-heading">
+        <div>
+          <p>BTC / USDT</p>
+          <h2 id="price">$95,000.00</h2>
+          <span id="packet-info">Waiting for market data...</span>
+        </div>
+        <span class="market-tag">LIVE MARKET</span>
+      </div>
+
+      <div id="skeleton" class="skeleton">
+        Initializing chart...
+      </div>
+
+      <canvas id="chart" width="900" height="300" data-state-sync="loading"></canvas>
+
+      <div id="action-panel" hidden>
+        <button id="validate-button">Validate Transaction</button>
+        <button id="distort-button">Test Malformed Payload</button>
+      </div>
+
+      <div id="notification" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="telemetry">
+      <h3>Automation Telemetry</h3>
+      <p>UI State: <strong id="ui-state">loading</strong></p>
+      <p>Received Packets: <strong id="received">0</strong></p>
+      <p>Dropped Packets: <strong id="dropped">0</strong></p>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

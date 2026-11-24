@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #101722;
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 25px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #293548;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p, #packet-info {
+  color: #94a3b8;
+}
+
+#connection-status {
+  color: #4ade80;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.market-card, .telemetry {
+  background: #192536;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.market-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.market-heading h2 {
+  font-size: 34px;
+}
+
+.market-tag {
+  color: #4ade80;
+}
+
+canvas {
+  width: 100%;
+  height: 300px;
+  display: block;
+  margin-top: 20px;
+}
+
+.skeleton {
+  height: 30px;
+  color: #94a3b8;
+  margin-top: 20px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 13px 18px;
+  margin: 15px 8px 0 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+#notification {
+  margin-top: 15px;
+  color: #fbbf24;
+}
+
+.telemetry p {
+  color: #cbd5e1;
+}

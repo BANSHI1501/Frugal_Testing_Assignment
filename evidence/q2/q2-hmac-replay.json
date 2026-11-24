@@ -1,0 +1,10 @@
+{
+  "entityId": "ent-1",
+  "validPutStatus": 200,
+  "tamperedPutStatus": 401,
+  "tamperedError": "INVALID_HMAC_SIGNATURE",
+  "replayElapsedMs": 6,
+  "timestampUsed": "1795548599937",
+  "nonceUsed": "065d0371-6c88-4b10-bdcc-3ad73d4b03c8",
+  "signatureReused": "1453a110134024135908a17d8d4327b6408d3a52dabb013f0b4f38dbfccec186"
+}
